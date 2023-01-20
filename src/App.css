@@ -1,5 +1,29 @@
+#root {
+  /* background-color: cornflowerblue; */
+  /* background-image: url('https://giphy.com/gifs/motivationalgif-xT4uQCnq6bDx8itLhK'); */
+  height: 90vh;
+}
+
+li {
+ list-style-type: none 
+}
+
+
 .App {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  border-style: solid;
+  min-height: 78vh;
   text-align: center;
+  margin: auto;
+  margin-top: 1rem;
+  
+  
+  border-radius: 10px;
+  padding: 2rem;
+  gap: 1rem;
+  background-color: cornflowerblue;
 }
 
 .App-logo {

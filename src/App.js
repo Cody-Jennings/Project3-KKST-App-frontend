@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import EditIndvKKSTData from './components/EditKKSTData'
+import IndvKKSTData from './components/IndvKKSTData'
+import MultiKKSTData from './components/MultiKKSTData'
+
+// function clickMe() {
+//   alert('Congrats on helping people understand modern "hip/slang" phrases!')
+// }
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      Welcome to the Kool Kids Slang Translator site
+      <Router>
+        <Routes>
+          <Route path='/' element={<MultiKKSTData />} />
+          <Route path='/:id' element={<IndvKKSTData />} />
+          <Route path='/:id/edit' element={<EditIndvKKSTData />} />
+        </Routes>
+      </Router>
     </div>
-  );
+  )
 }
 
 export default App;
