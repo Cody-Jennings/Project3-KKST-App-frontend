@@ -5,7 +5,7 @@ function Create() {
     const nav = useNavigate()
 
     const createTheKKSTData = (e) => {
-        const kkstdata = {Phrase: e.target.phrase.value, Translation: e.target.phrase.value, Example: e.target.phrase.value}
+        const kkstdata = {phrase: e.target.phrase.value, translation: e.target.tranlation.value, example: e.target.example.value}
         createIndvKKSTData(kkstdata)
         nav('/')
     }

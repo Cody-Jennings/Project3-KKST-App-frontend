@@ -11,7 +11,6 @@ import MultiKKSTData from './components/MultiKKSTData'
 function App() {
   return (
     <div className="App">
-      Welcome to the Kool Kids Slang Translator site
       <Router>
         <Routes>
           <Route path='/' element={<MultiKKSTData />} />

@@ -13,13 +13,15 @@ export default function MultiKKSTData() {
 
     console.log(multiKKSTData)
     return(
+        
         <div>
+            <h1>Welcome to the Kool Kid Slang translator site</h1>
             <ul>
-          {multiKKSTData.map((indvKKSTData) => {
+          {multiKKSTData.map((IndvKKSTData) => {
             return (
                 <li><a href={`/${IndvKKSTData._id}`}>
-                    <h3 className={`${IndvKKSTData.complete ? "completed" : ""}`}>
-                    {indvKKSTData.Phrase}
+                    <h3>
+                    {IndvKKSTData.Phrase}
                   </h3></a></li>
             )
           })}
