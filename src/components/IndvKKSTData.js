@@ -18,9 +18,9 @@ export default function IndvKKSTData() {
     return(
         <div>
             <h1> Kool Kids Slang Phrase:</h1>
-            <h3>{IndvKKSTData.phrase}</h3>
-            <h3>{IndvKKSTData.translation}</h3>
-            <h3>{IndvKKSTData.example}</h3>
+            <h3>{IndvKKSTData.Phrase}</h3>
+            <h3>{IndvKKSTData.Translation}</h3>
+            <h3>{IndvKKSTData.Example}</h3>
             <button onClick={() => {nav(`/${id}/edit`)}}>Edit</button>
             <button onClick={deleteTheIndvKKSTData}>Delete</button>
             <button onClick={() => {nav('/')}}>Main</button>

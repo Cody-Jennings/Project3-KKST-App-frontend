@@ -17,9 +17,9 @@ export default function MultiKKSTData() {
             <ul>
           {multiKKSTData.map((indvKKSTData) => {
             return (
-                <li><a href={`/${indvKKSTData._id}`}>
+                <li><a href={`/${IndvKKSTData._id}`}>
                     <h3 className={`${IndvKKSTData.complete ? "completed" : ""}`}>
-                    {indvKKSTData.description}
+                    {indvKKSTData.Phrase}
                   </h3></a></li>
             )
           })}
