@@ -13,16 +13,17 @@ export default function EditIndvKKSTData() {
 
     const editTheIndvKKSTData = e => {
         e.preventDefault()
-        const updatedIndvKKSTData = {phrase: e.target.phrase.value, translation: e.target.phrase.value, example: e.target.phrase.value}
+        const updatedIndvKKSTData = {Phrase: e.target.phrase.value, Translation: e.target.phrase.value, Example: e.target.phrase.value}
         editIndvKKSTData(id, updatedIndvKKSTData)
         nav(`/${id}`)
     }
     return(
         <div>
+            Slang term have a new meaning? Edit below:<br></br>
             <form onSubmit={editTheIndvKKSTData}>
-            Phrase:<input type='text' name='phrase' defaultValue={data.phrase} />
-            Translation:<input type='text' name='translation' defaultValue={data.translation} />
-            Example:<input type='text' name='example' defaultValue={data.example} />
+            Phrase:<input type='text' name='phrase' defaultValue={data.Phrase} /><br></br>
+            Translation:<input type='text' name='translation' defaultValue={data.Translation} /><br></br>
+            Example:<input type='text' name='example' defaultValue={data.Example} /><br></br>
             <input type='submit' />   
             </form>
         </div>

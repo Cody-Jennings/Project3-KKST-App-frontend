@@ -25,9 +25,9 @@ export const editIndvKKSTData = (id, updatedIndvKKSTData) => {
 }   
 
 // Create the IndvKKSTData
-export const createIndvKKSTData = (kkstdata) => {
+export const createIndvKKSTData = (translationData) => {
     const URL = baseURL
-    const response = axios.post(URL, kkstdata)
+    const response = axios.post(URL, translationData)
     return response
 }
 
