@@ -13,7 +13,7 @@ function Create() {
 return(
     <div>
         <h4>Create a Slang Phrase</h4>
-        <form onSubmit={createTheKKSTData}>
+        <form onSubmit={createTheKKSTData} autocomplete="off">
             Phrase: <input type='text' name='phrase' id='dsc'/><br></br>
             Translation: <input type='text' name='translation' id='dsc'/><br></br>
             Example: <input type='text' name='example' id='dsc'/>
