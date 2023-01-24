@@ -21,8 +21,8 @@ export default function EditIndvKKSTData() {
             Date: e.target.date.value
         }
         
-        editIndvKKSTData(id, updatedIndvKKSTData)
-        nav(`/${id}`)
+        editIndvKKSTData(id, updatedIndvKKSTData).then(() => {nav(`/${id}`)})
+        
     }
     return(
         <div>
