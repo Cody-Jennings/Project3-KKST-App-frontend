@@ -5,12 +5,14 @@ function Create() {
     const nav = useNavigate()
 
     const createTheKKSTData = (e) => {
+        //e.preventdefault()
         const translationData = {
             Phrase: e.target.phrase.value, 
             Translation: e.target.translation.value, 
             Example: e.target.example.value, 
             Author: e.target.author.value, 
             Date: e.target.date.value}
+            console.log(translationData)
         createIndvKKSTData(translationData).then(() => {nav('/')})
         
     }
@@ -18,7 +20,7 @@ function Create() {
 return(
     <div>
         <h4>Create a Slang Phrase</h4>
-        <form onSubmit={createTheKKSTData} autocomplete="off">
+        <form onSubmit={createTheKKSTData} autoComplete="off">
             Phrase: <input type='text' name='phrase' id='dsc'/><br></br>
             Translation: <input type='text' name='translation' id='dsc'/><br></br>
             Example: <input type='text' name='example' id='dsc'/><br></br>
