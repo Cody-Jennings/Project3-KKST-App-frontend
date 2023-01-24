@@ -23,7 +23,7 @@ return(
             Translation: <input type='text' name='translation' id='dsc'/><br></br>
             Example: <input type='text' name='example' id='dsc'/><br></br>
             Author: <input type='text' name='author' id='dsc'/><br></br>
-            Date: <input type='date' data-date="" data-date-format="DD MMMM YYYY" id='dsc'/>
+            Date: <input type='date' name='date' id='dsc'/>
             
             <input type='submit'/>
         </form>
