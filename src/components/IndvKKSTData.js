@@ -21,6 +21,8 @@ export default function IndvKKSTData() {
             <h3>Phrase: {IndvKKSTData.Phrase}</h3>
             <h3>Translation: {IndvKKSTData.Translation}</h3>
             <h3>Example: {IndvKKSTData.Example}</h3>
+            <h3>Author: {IndvKKSTData.Author}</h3>
+            <h3>Created Date: {IndvKKSTData.Date}</h3>
             <button onClick={() => {nav(`/${id}/edit`)}}>Edit</button>
             <button onClick={deleteTheIndvKKSTData}>Delete</button>
             <button onClick={() => {nav('/')}}>Main</button>

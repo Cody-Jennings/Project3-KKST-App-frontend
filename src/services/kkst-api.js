@@ -1,7 +1,7 @@
 // All of our endpoints
 import axios from 'axios'
 
-const baseURL = 'http://localhost:3001/KKST-App'
+const baseURL = 'https://kkst-backend.onrender.com/KKST-App'
 
 // Show all
 export const getMultiKKSTData = () => {
