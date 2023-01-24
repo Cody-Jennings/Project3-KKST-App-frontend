@@ -12,8 +12,8 @@ export default function IndvKKSTData() {
     .then(res => setKKSTData(res.data))}, [])
 
     const deleteTheIndvKKSTData = () => {
-        deleteIndvKKSTData(id)//delete function goes here
-        nav('/')
+        deleteIndvKKSTData(id).then(() => {nav('/')})//delete function goes here
+        
     }
     return(
         <div>
