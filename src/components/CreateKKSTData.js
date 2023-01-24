@@ -11,8 +11,8 @@ function Create() {
             Example: e.target.example.value, 
             Author: e.target.author.value, 
             Date: e.target.date.value}
-        createIndvKKSTData(translationData)
-        nav('/')
+        createIndvKKSTData(translationData).then(() => {nav('/')})
+        
     }
 
 return(
