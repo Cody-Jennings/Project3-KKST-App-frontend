@@ -17,16 +17,16 @@ export default function IndvKKSTData() {
         
     }
     return(
-        <div>
+        <div className='indvPage'>
             <h1> Kool Kids Slang Phrase:</h1>
-            <h3>Phrase: {IndvKKSTData.Phrase}</h3>
-            <h3>Translation: {IndvKKSTData.Translation}</h3>
-            <h3>Example: {IndvKKSTData.Example}</h3>
-            <h3>Author: {IndvKKSTData.Author}</h3>
-            <h3>Created Date: {IndvKKSTData.Date}</h3>
-            <Button variant="secondary" onClick={() => {nav(`/${id}/edit`)}}>Edit</Button>
-            <Button variant="danger" onClick={deleteTheIndvKKSTData}>Delete</Button>
-            <Button onClick={() => {nav('/')}}>Main</Button>
+            <h3 className='indvCSS'>Phrase: {IndvKKSTData.Phrase}</h3>
+            <h3 className='indvCSS'>Translation: {IndvKKSTData.Translation}</h3>
+            <h3 className='indvCSS'>Example: {IndvKKSTData.Example}</h3>
+            <h3 className='indvCSS'>Author: {IndvKKSTData.Author}</h3>
+            <h3 className='indvCSS'>Created Date: {IndvKKSTData.Date}</h3><br></br>
+            <Button className='indvButton' variant="secondary" onClick={() => {nav(`/${id}/edit`)}}>Edit</Button>
+            <Button className='indvButton' variant="danger" onClick={deleteTheIndvKKSTData}>Delete</Button>
+            <Button className='indvButton' onClick={() => {nav('/')}}>Main</Button>
         </div>
     )
 }

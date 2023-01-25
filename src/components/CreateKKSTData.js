@@ -19,14 +19,14 @@ function Create() {
     }
 
 return(
-    <div>
+    <div className='createFormDiv'>
         <h4>Create a Slang Phrase</h4>
-        <form onSubmit={createTheKKSTData} autoComplete="off">
-            Phrase: <input type='text' name='phrase' id='dsc'/><br></br>
-            Translation: <input type='text' name='translation' id='dsc'/><br></br>
-            Example: <input type='text' name='example' id='dsc'/><br></br>
-            Author: <input type='text' name='author' id='dsc'/><br></br>
-            Date: <input type='date' name='date' id='dsc'/>
+        <form className='form' onSubmit={createTheKKSTData} autoComplete="off">
+            <h4 className='createInput'>Phrase: <input type='text' name='phrase' id='dsc'/></h4><br></br>
+            <h4 className='createInput'>Translation: <input type='text' name='translation' id='dsc'/></h4><br></br>
+            <h4 className='createInput'>Example: <input type='text' name='example' id='dsc'/></h4><br></br>
+            <h4 className='createInput'>Author: <input type='text' name='author' id='dsc'/></h4><br></br>
+            <h4 className='createInput'>Date: <input type='date' name='date' id='dsc'/></h4>
             
             <input type='submit' class="btn btn-success"/>
         </form>

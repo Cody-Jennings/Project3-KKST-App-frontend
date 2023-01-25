@@ -3,7 +3,24 @@
   /* background-image: url('https://giphy.com/gifs/motivationalgif-xT4uQCnq6bDx8itLhK'); */
   height: 90vh;
 }
+.phrase-link {
+  color: pink;
+ 
+}
 
+
+
+.phrase-link:hover{
+  color: red
+}
+
+.phrase-link:active {
+  color: green
+}
+
+
+
+/* active, hover visited */
 li {
  list-style-type: none 
 }
@@ -12,9 +29,9 @@ li {
 .App {
   display: flex;
   flex-direction: column;
-  width: 30vw;
+  width: 75vw;
   border-style: solid;
-  min-height: 78vh;
+  min-height: 95vh;
   text-align: center;
   margin: auto;
   margin-top: 1rem;
@@ -23,7 +40,7 @@ li {
   border-radius: 10px;
   padding: 2rem;
   gap: 1rem;
-  background-color: cornflowerblue;
+  background-color: rgb(95, 125, 183);
 }
 
 .App-logo {
@@ -59,4 +76,102 @@ li {
   to {
     transform: rotate(360deg);
   }
+}
+
+/* .indvPage Button{
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  justify-content: space-evenly;
+  padding: 10px 10px 10px 10px;
+} */
+
+.indvCSS {
+ display: flex;
+ align-items: left;
+ text-align:left;
+ line-height: 2.5;
+}
+
+.indvButton {
+  display:flex;
+  justify-content: space-evenly;
+  
+}
+
+.createFormDiv{
+ /* text-align:center; */
+  width:30vw;
+  height:10vh;
+}
+
+.form {
+  
+  /* text-align:center */
+}
+
+.createInput{
+  
+  /* text-align:center; */
+}
+
+
+/* edit css */
+
+.editForm{
+  /* text-align: center; */
+  /* justify-content: center; */
+  
+  
+  
+}
+
+.editInput {
+  /* text-align:center; */
+  /* float:right; */
+  /* margin: auto; 
+  justify-content: center;
+  display: flex; */
+  /* align-items: stretch; */
+  text-align: left;
+  /* float: left; */
+  /* margin-left: 325px */
+}
+
+
+
+.editContainer, input {
+  /* border: 2px solid black;
+  border-radius: 5px; */
+  /* background-color: rgb(63, 106, 70); */
+  /* text-align: center; */
+  /* margin: 60px 250px;
+  height: 75vh; */
+  /* justify-content: space-around; */
+  /* float: right; */
+  margin-right: 325px;
+  
+}
+
+.phraseInput {
+  float: right;
+}
+
+.editContainer, h1{
+  text-align: center;
+  justify-content: center;
+}
+
+.editContainer{
+  margin: auto
+}
+
+.editContainer, Button { 
+    /* display: flex; */
+    flex-direction: row;
+    /* width: 200px; */
+    justify-content: space-evenly;
+    padding: 10px 10px 10px 10px;
+    align-items: center;
+  
 }

@@ -15,13 +15,15 @@ export default function MultiKKSTData() {
   return (
 
     <div>
-      <h1>Welcome to the Kool Kid Slang translator site</h1>
+      <h2>Welcome to the Kool Kid Slang translator app</h2>
+      <p>Are you an "old-soul" or "un-hip" by todays standards and wanting to understand the new and odd phrases?    
+         Look no further as this app will make you the koolest kid on the block.</p>
       <ul>
         {multiKKSTData.sort((a, b) => a.Phrase.localeCompare(b.Phrase)).map((IndvKKSTData) => {
           return (
             <li>
               <Link to={`/${IndvKKSTData._id}`}>
-                <h3>
+                <h3 className='phrase-link'>
                   {IndvKKSTData.Phrase}
                 </h3>
               </Link>

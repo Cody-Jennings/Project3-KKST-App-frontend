@@ -26,15 +26,16 @@ export default function EditIndvKKSTData() {
         
     }
     return(
-        <div>
-            Slang term have a new meaning? Edit below:<br></br>
-            <form onSubmit={editTheIndvKKSTData} autoComplete="off">
-            Phrase:<input type='text' name='phrase' defaultValue={data.Phrase} /><br></br>
-            Translation:<input type='text' name='translation' defaultValue={data.Translation} /><br></br>
-            Example:<input type='text' name='example' defaultValue={data.Example} /><br></br>
-            Author:<input type='text' name='author' defaultValue={data.Author} /><br></br>
-            Created Date:<input type='date' name='date' defaultValue={data.Date} /><br></br>
-            <input type='submit' class="btn btn-success" /><Button variant='primary' onClick={() => {nav('/')}}>Main</Button>   
+        <div className='editContainer'>
+            <h1>Slang term have a new meaning?</h1><br></br>
+            <h3>Edit below:</h3><br></br>
+            <br></br><form className='editForm'onSubmit={editTheIndvKKSTData} autoComplete="off">
+            <h4 className='editInput'>Phrase:<input className='phraseInput' type='text' name='phrase' defaultValue={data.Phrase} /></h4><br></br>
+            <h4 className='editInput'>Translation:<input className='phraseInput' type='text' name='translation' defaultValue={data.Translation} /></h4><br></br>
+            <h4 className='editInput'>Example:<input className='phraseInput' type='text' name='example' defaultValue={data.Example} /></h4><br></br>
+            <h4 className='editInput'>Author:<input className='phraseInput' type='text' name='author' defaultValue={data.Author} /></h4><br></br>
+            <h4 className='editInput'>Created Date:<input className='phraseInput' type='date' name='date' defaultValue={data.Date} /></h4><br></br>
+            <br></br><input type='submit' class="btn btn-success" /><Button variant='primary' onClick={() => {nav('/')}}>Main</Button>   
             </form>
         </div>
     )
