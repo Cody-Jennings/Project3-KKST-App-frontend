@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import EditIndvKKSTData from './components/EditKKSTData'
 import IndvKKSTData from './components/IndvKKSTData'
 import MultiKKSTData from './components/MultiKKSTData'
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+
 
 // function clickMe() {
 //   alert('Congrats on helping people understand modern "hip/slang" phrases!')

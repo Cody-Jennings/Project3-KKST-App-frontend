@@ -1,6 +1,7 @@
 import { getIndvKKSTData, editIndvKKSTData } from '../services/kkst-api'
 import { useState, useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
+import Button from 'react-bootstrap/Button'
 
 export default function EditIndvKKSTData() {
     const {id} = useParams()
@@ -33,7 +34,7 @@ export default function EditIndvKKSTData() {
             Example:<input type='text' name='example' defaultValue={data.Example} /><br></br>
             Author:<input type='text' name='author' defaultValue={data.Author} /><br></br>
             Created Date:<input type='date' name='date' defaultValue={data.Date} /><br></br>
-            <input type='submit' /><button onClick={() => {nav('/')}}>Main</button>   
+            <input type='submit' class="btn btn-success" /><Button variant='primary' onClick={() => {nav('/')}}>Main</Button>   
             </form>
         </div>
     )

@@ -1,6 +1,7 @@
 import { useState, useEffect} from 'react'
 import { getIndvKKSTData, deleteIndvKKSTData } from '../services/kkst-api'
 import { useParams, useNavigate } from 'react-router-dom'
+import Button from 'react-bootstrap/button'
 
 export default function IndvKKSTData() {
     const nav = useNavigate()//this is us setting up our return to main page
@@ -23,9 +24,9 @@ export default function IndvKKSTData() {
             <h3>Example: {IndvKKSTData.Example}</h3>
             <h3>Author: {IndvKKSTData.Author}</h3>
             <h3>Created Date: {IndvKKSTData.Date}</h3>
-            <button onClick={() => {nav(`/${id}/edit`)}}>Edit</button>
-            <button onClick={deleteTheIndvKKSTData}>Delete</button>
-            <button onClick={() => {nav('/')}}>Main</button>
+            <Button variant="secondary" onClick={() => {nav(`/${id}/edit`)}}>Edit</Button>
+            <Button variant="danger" onClick={deleteTheIndvKKSTData}>Delete</Button>
+            <Button onClick={() => {nav('/')}}>Main</Button>
         </div>
     )
 }

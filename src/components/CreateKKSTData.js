@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import {createIndvKKSTData} from '../services/kkst-api'
+import Button from 'react-bootstrap/Button'
 
 function Create() {
     const nav = useNavigate()
@@ -27,7 +28,7 @@ return(
             Author: <input type='text' name='author' id='dsc'/><br></br>
             Date: <input type='date' name='date' id='dsc'/>
             
-            <input type='submit'/>
+            <input type='submit' class="btn btn-success"/>
         </form>
     </div>
 )
