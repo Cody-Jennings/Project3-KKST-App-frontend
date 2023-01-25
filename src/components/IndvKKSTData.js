@@ -18,12 +18,12 @@ export default function IndvKKSTData() {
     }
     return(
         <div className='indvPage'>
-            <h1> Kool Kids Slang Phrase:</h1>
-            <h3 className='indvCSS'>Phrase: {IndvKKSTData.Phrase}</h3>
-            <h3 className='indvCSS'>Translation: {IndvKKSTData.Translation}</h3>
-            <h3 className='indvCSS'>Example: {IndvKKSTData.Example}</h3>
-            <h3 className='indvCSS'>Author: {IndvKKSTData.Author}</h3>
-            <h3 className='indvCSS'>Created Date: {IndvKKSTData.Date}</h3><br></br>
+            <h1> Kool Kids Slang Phrase:</h1><br></br>
+            <h3 className='indvCSS'>Phrase : <span>{IndvKKSTData.Phrase}</span></h3>
+            <h3 className='indvCSS'>Translation: <span>{IndvKKSTData.Translation}</span></h3>
+            <h3 className='indvCSS'>Example: <span>{IndvKKSTData.Example}</span></h3>
+            <h3 className='indvCSS'>Author: <span>{IndvKKSTData.Author}</span></h3>
+            <h3 className='indvCSS'>Created Date: <span>{IndvKKSTData.Date}</span></h3><br></br>
             <Button className='indvButton' variant="secondary" onClick={() => {nav(`/${id}/edit`)}}>Edit</Button>
             <Button className='indvButton' variant="danger" onClick={deleteTheIndvKKSTData}>Delete</Button>
             <Button className='indvButton' onClick={() => {nav('/')}}>Main</Button>

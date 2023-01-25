@@ -20,13 +20,13 @@ function Create() {
 
 return(
     <div className='createFormDiv'>
-        <h4>Create a Slang Phrase</h4>
+        <h4>Create a Slang Phrase</h4><br></br>
         <form className='form' onSubmit={createTheKKSTData} autoComplete="off">
-            <h4 className='createInput'>Phrase: <input type='text' name='phrase' id='dsc'/></h4><br></br>
-            <h4 className='createInput'>Translation: <input type='text' name='translation' id='dsc'/></h4><br></br>
-            <h4 className='createInput'>Example: <input type='text' name='example' id='dsc'/></h4><br></br>
-            <h4 className='createInput'>Author: <input type='text' name='author' id='dsc'/></h4><br></br>
-            <h4 className='createInput'>Date: <input type='date' name='date' id='dsc'/></h4>
+            <h5 className='createInput'>Phrase: <input className='createInput2' type='text' name='phrase' id='dsc'/></h5>
+            <h5 className='createInput'>Translation: <input className='createInput2' type='text' name='translation' id='dsc'/></h5>
+            <h5 className='createInput'>Example: <input className='createInput2' type='text' name='example' id='dsc'/></h5>
+            <h5 className='createInput'>Author: <input className='createInput2' type='text' name='author' id='dsc'/></h5>
+            <h5 className='createInput'>Date: <input className='createInput2' type='date' name='date' id='dsc'/></h5><br></br>
             
             <input type='submit' class="btn btn-success"/>
         </form>

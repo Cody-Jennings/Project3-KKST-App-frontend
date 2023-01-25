@@ -14,11 +14,11 @@ export default function MultiKKSTData() {
   console.log(multiKKSTData)
   return (
 
-    <div>
-      <h2>Welcome to the Kool Kid Slang translator app</h2>
-      <p>Are you an "old-soul" or "un-hip" by todays standards and wanting to understand the new and odd phrases?    
-         Look no further as this app will make you the koolest kid on the block.</p>
-      <ul>
+    <div className='multiContainer'>
+      <h1>Welcome to the Kool Kid Slang translator app</h1><br></br>
+      <h4>Are you an "old-soul" or "un-hip" by todays standards and wanting to understand the new and odd phrases?
+        Look no further as this app will make you the koolest kid on the block!</h4><br></br>
+      <ul className='multiUL'>
         {multiKKSTData.sort((a, b) => a.Phrase.localeCompare(b.Phrase)).map((IndvKKSTData) => {
           return (
             <li>
@@ -30,7 +30,7 @@ export default function MultiKKSTData() {
             </li>
           )
         })}
-      </ul>
+      </ul><br></br>
       <Create />
     </div>
   )
