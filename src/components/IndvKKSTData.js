@@ -1,7 +1,7 @@
 import { useState, useEffect} from 'react'
 import { getIndvKKSTData, deleteIndvKKSTData } from '../services/kkst-api'
 import { useParams, useNavigate } from 'react-router-dom'
-import Button from 'react-bootstrap/button'
+import Button from 'react-bootstrap/Button'
 
 export default function IndvKKSTData() {
     const nav = useNavigate()//this is us setting up our return to main page
