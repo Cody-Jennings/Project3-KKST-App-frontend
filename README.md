@@ -4,7 +4,8 @@
 Full MERN Stack translator app with CRUD functionality. My idea was inspired by our diverse PerScholas cohort with many walks of life. This comes with many new unique phrases being introduced in everyday conversation. While I thought this was an original idea I remembered Urban dictionary already existed, this is essentially a made from scratch Urban dictionary clone. I do not use very many slang terms personally but thought this was a nice shout-out to my friends who use these phrases throughout the course.
 
 ### Live Link to Kool Kid Translator App
-[Live-Site/Click here](https://kkst-frontend.onrender.com)
+[Frontend Live-Site/Click here](https://kkst-frontend.onrender.com)
+[Backend Live-Site/Click here](https://kkst-backend.onrender.com)
 
 ### Github Links 
 
