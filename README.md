@@ -1,73 +1,96 @@
-# Getting Started with Create React App
+# KKST-App 
+### By: Cody Jennings 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Full MERN Stack translator app with CRUD functionality. My idea was inspired by our diverse PerScholas cohort with many walks of life. This comes with many new unique phrases being introduced in everyday conversation. While I thought this was an original idea I remembered Urban dictionary already existed, this is essentially a made from scratch Urban dictionary clone. I do not use very many slang terms personally but thought this was a nice shout-out to my friends who use these phrases throughout the course.
 
-## Available Scripts
+### Live Link to Kool Kid Translator App
+[Live-Site/Click here](https://kkst-frontend.onrender.com)
 
-In the project directory, you can run:
+### Github Links 
 
-### `npm start`
+[Front-End/React](https://github.com/Cody-Jennings/Project3-KKST-App-frontend.git)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[Back-End/MongoDB-Mongoose,Express,Node](https://github.com/Cody-Jennings/Project3-KKST-App-backend.git)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Access
 
-### `npm test`
+You can fork and or clone the repo by copy and pasting the following in your terminal. Do not forget to install the dependencies displayed below to correctly get the app to work, (trust me). 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+Backend
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`git clone https://github.com/Cody-Jennings/Project3-KKST-App-backend.git`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Frontend
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`git clone https://github.com/Cody-Jennings/Project3-KKST-App-frontend.git`
 
-### `npm run eject`
+![dependencies](dependencies.jpg)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Kool Kid Slang Translator App / How To
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+When the user first clicks on the live link they are directed to the main page which gives a brief introduction/ overview of why the app exists. The main page also shows previously created slang phrases and a form to create a new phrase. Main page as shown below: 
+![mainpg](Mainpg.jpg) The user can click on any existing slang phrase and be directed to that phrase's about page. This about page lists the slang phrase, translation, an example, the author, and date created. At the bottom of the page the user has the option to edit or delete the phrase and to navigate back to the main page. Phrase about page as shown below:  
+![slangaboutpg](Slangaboutpg.jpg)
+The user can delete the phrase and is redirected back to the main page were a new update list of phrases are at. If the user simply wanted to view the phrase and does not want to edit or delete the phrase they can click main and be directed back to the main page.
+If the user decides to edit the phrase they can click edit and be directed to the edit page. This page auto-populates input fields with current data and allows users to edit any or all inputs. Once the user finishes editing their desired fields they can click Submit and be directed back to the phrase's about page. If the user decides not to make any changes they can click main and return to main page. Phrase edit page as shown below:  
+![slangeditpg](Slangeditpg.jpg)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Technologies Used 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- HTML
+- JavaScript
+- CSS
+- MERN Stack Fullstack
+- MongoDb
+- Mongoose
+- Express
+- React
+- Node
+- Axios
+- Github
+- BootStrap
+- Render Web Hosting Services
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Unsolved Issues
+An unsolved issue I did not get to resolve was on the phrase's about page. There is no space between input title and user input, user input is also staggered. I would like all of the user inputs to be spaced further to the right, similiar spacing and idention to the fields on the edit page.
 
-### Code Splitting
+## Future Enhancements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+My goal is to add a login page that accepts user logins and accepts their data. Phrases can only be edited by their "author". I'm also interested in adding a user page that displays all the phrases they have created, a  phrase search bar and a phrase like or dislike button. 
 
-### Analyzing the Bundle Size
+## Resources
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- [w3Schools]
 
-### Making a Progressive Web App
+- [Youtube]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- [Github]
 
-### Advanced Configuration
+- [React-bootstrap](https://react-bootstrap.github.io/getting-started/introduction/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- [Stack Overflow]
 
-### Deployment
+- [MDN]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- [Technology component Documentation]
 
-### `npm run build` fails to minify
+- [Urban Dictionary]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Acknowledgements
 
-# Express Repo
-https://github.com/Cody-Jennings/Project3-KKST-App-backend.git
+- Tishana Trainor 
+- Kasper Kain
+- Arianna Bunn
+- Hadia Shafique
+- Sharon Ogbonna
+- Long Hoang
+- Vogue Boney
+- All other classmates who took time to help with my project code and gave confidence boosters and feedback/criticism.
+
+
+## Disclaimer
+
+I am not affiliated with nor own any rights regarding this translator app's phrases, translations, examples or author names. No profits were generated from this project. All materials utilized were for educational and demonstration purposes only. 

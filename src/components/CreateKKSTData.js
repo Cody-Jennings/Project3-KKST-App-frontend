@@ -1,12 +1,11 @@
 import { useNavigate } from 'react-router-dom'
 import {createIndvKKSTData} from '../services/kkst-api'
-import Button from 'react-bootstrap/Button'
+
 
 function Create() {
     const nav = useNavigate()
 
     const createTheKKSTData = (e) => {
-        //e.preventdefault()
         const translationData = {
             Phrase: e.target.phrase.value, 
             Translation: e.target.translation.value, 
@@ -20,7 +19,7 @@ function Create() {
 
 return(
     <div className='createFormDiv'>
-        <h4>Create a Slang Phrase</h4><br></br>
+        <h4>Create a Slang Phrase for all to understand!</h4><br></br>
         <form className='form' onSubmit={createTheKKSTData} autoComplete="off">
             <h5 className='createInput'>Phrase: <input className='createInput2' type='text' name='phrase' id='dsc'/></h5>
             <h5 className='createInput'>Translation: <input className='createInput2' type='text' name='translation' id='dsc'/></h5>

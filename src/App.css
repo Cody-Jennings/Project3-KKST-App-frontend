@@ -1,25 +1,13 @@
 #root {
-  /* background-color: cornflowerblue; */
-  /* background-image: url('https://giphy.com/gifs/motivationalgif-xT4uQCnq6bDx8itLhK'); */
-  height: 90vh;
+  height: 95vh;
+  background-color: #bfd2db;
+  font-family:fantasy
 }
 
-.phrase-link {
-  color: pink;
-
+.body{
+  height:100vh
 }
 
-.phrase-link:hover {
-  color: red
-}
-
-.phrase-link:active {
-  color: green
-}
-
-li {
-  list-style-type: none
-}
 
 
 .App {
@@ -34,7 +22,7 @@ li {
   border-radius: 10px;
   padding: 2rem;
   gap: 1rem;
-  background-color: rgb(95, 125, 183);
+  background-color: #afb6ba;
 }
 
 .App-logo {
@@ -73,6 +61,52 @@ li {
   }
 }
 
+.editInput {
+  text-align: left;
+}
+
+.editContainer,input { 
+  margin-right: 325px;
+}
+
+.phraseInput {
+  float: right;
+}
+
+.editContainer, h1 {
+  text-align: center;
+  justify-content: center;
+}
+
+.editContainer {
+  margin: auto
+}
+
+.editContainer, Button {
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 10px 10px 10px 10px;
+  align-items: center;
+}
+
+.editInput {
+  color: rgb(199, 60, 83)
+}
+
+.createFormDiv {
+  width: 30vw;
+  height: 10vh;
+  margin:auto
+}
+
+.createInput { 
+  text-align: left;
+}
+
+.createInput2 {
+  float: right;
+}
+
 .indvCSS {
   display: flex;
   align-items: left;
@@ -82,21 +116,14 @@ li {
 
 .indvCSS,
 Example {
-  color: rgb(255, 60, 0)
+  color: rgb(199, 60, 83)
 }
 
 .indvPage, span {
-  /* display: inline-block;
-  padding-left: 50px;
-  text-indent: -50px; */
-  /* vertical-align: top; */
-  /* width: 200px; */
-  color:black;
- 
- 
+  color:rgb(55, 105, 180)
 }
 
-.indvPage, h1{
+.indvPage, h1 {
   color:black
 }
 
@@ -109,99 +136,11 @@ Example {
   margin: 10px;
 }
 
-/* .indvPage, h3{
-  text-decoration: underline;
-} */
-
-
-
-.createFormDiv {
-  /* text-align:center; */
-  width: 30vw;
-  height: 10vh;
-  margin:auto
+.multiContainer, h4 {
+  color:rgb(55, 105, 180)
 }
 
-.form {
-
-  /* text-align:center */
-}
-
-.createInput {
-
-  /* text-align:center; */
-}
-
-
-/* edit css */
-
-.editForm {
-  /* text-align: center; */
-  /* justify-content: center; */
-
-
-
-}
-
-.editInput {
- 
-  text-align: left;
- 
-}
-
-
-
-.editContainer,
-input {
-  
-  margin-right: 325px;
-
-}
-
-.phraseInput {
-  float: right;
-}
-
-.editContainer,
-h1 {
-  text-align: center;
-  justify-content: center;
-}
-
-.editContainer {
-  margin: auto
-}
-
-.editContainer,
-Button {
-  /* display: flex; */
-  flex-direction: row;
-  /* width: 200px; */
-  justify-content: space-evenly;
-  padding: 10px 10px 10px 10px;
-  align-items: center;
-
-}
-
-
-.editInput {
-  color: red
-}
-
-
-
-.createInput{
-  text-align: left;
-}
-
-.createInput2 {
-  float: right;
-}
-
-.multiContainer, h4{
-  color:greenyellow
-}
-.multiUL{
+.multiUL {
   list-style: none;
     overflow: auto;
     display: flex;
@@ -211,4 +150,20 @@ Button {
     max-width: 60vw;
     margin: auto;
     max-height: 75vw;
+}
+
+.phrase-link {
+  color: rgb(199, 60, 83)
+}
+
+.phrase-link:hover {
+  color: red
+}
+
+.phrase-link:active {
+  color: green
+}
+
+li {
+  list-style-type: none
 }
