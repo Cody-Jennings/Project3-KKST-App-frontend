@@ -5,7 +5,7 @@ Full MERN Stack translator app with CRUD functionality. My idea was inspired by 
 
 ### Live Link to Kool Kid Translator App
 [Frontend Live-Site/Click here](https://kkst-frontend.onrender.com)
-[Backend Live-Site/Click here](https://kkst-backend.onrender.com)
+[Backend Live-Site/Click here](https://kkst-backend.onrender.com/KKST-App)
 
 ### Github Links 
 
